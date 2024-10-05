@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;  /* Center the game container */
+    align-items: center;      /* Center the game container */
+    background-color: #1c1c1c; /* Dark background color */
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 2px solid #333;
+    z-index: 10; /* Make sure it's above everything else */
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+.game-container {
+    position: relative;
+}
+
+#gameCanvas {
+    width: 800px;  /* Fixed width */
+    height: 600px; /* Fixed height */
+    background-color: lightblue;
+    border: 2px solid #333; /* Optional border */
+}
+
+.score-board {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    z-index: 1; /* Ensure the score board is above the canvas */
+}
+
+/* Styles for mobile controls */
+/* Styles for mobile controls */
+.controls {
+    display: none; /* Hide by default */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10; /* Ensure buttons are above the canvas */
+}
+
+.button-row {
+    display: flex;
+    justify-content: center; /* Center the buttons in the row */
+    margin: 5px 0; /* Add some margin between rows */
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin: 5px;
+}
+
+/* Media query to show controls on mobile devices */
+@media (max-width: 768px) { /* You can adjust the breakpoint as needed */
+    .controls {
+        display: block; /* Show on mobile */
+    }
+}
+
+

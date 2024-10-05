@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <!-- Add this below your canvas element -->
+        <!-- Add this below your canvas element -->
+<div id="controls" class="controls">
+    <div class="button-row">
+        <button id="upButton">↑</button>
+    </div>
+    <div class="button-row">
+        <button id="leftButton">←</button>
+        <button id="downButton">↓</button>
+        <button id="rightButton">→</button>
+    </div>
+</div>
+
+
+        <img id="newPlayer" src="images/player2.png" alt="Player" style="display:none;"/>
+        <img id="enemy" src="images/enemy.png" alt="Enemy" style="display:none;"/>
+    </div>
+    <div class="score-board">
+        <p>Score: <span id="score">0</span></p>
+        <button id="startButton">Start Game</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
